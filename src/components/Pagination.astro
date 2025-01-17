@@ -59,8 +59,8 @@ function getVisiblePages(total: number, current: number): Array<number | null> {
     result.push(page);
     previousPage = page;
   }
-  // reverse order
-  return result.reverse();
+ 
+  return result;
 }
 ---
 
