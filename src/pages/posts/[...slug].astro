@@ -46,6 +46,13 @@ if (replacedHero && !images[replacedHero])
       ) : null
     }
     <BlogPost>
+      <script>
+        MathJax = {
+          tex: {
+            inlineMath: [['$', '$']]
+          }
+        };
+      </script>
       <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
       <div class="flex mt-8 items-center gap-x-4 text-xs">
         <FormattedDate date={post.data.pubDate} />
