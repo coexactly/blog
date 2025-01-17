@@ -69,7 +69,7 @@ function getVisiblePages(total: number, current: number): Array<number | null> {
 >
   <div class="-mt-px flex w-0 flex-1">
     {
-      current < total ? (
+      current > 1 ? (
         <a
           href={
             tag
@@ -117,7 +117,7 @@ function getVisiblePages(total: number, current: number): Array<number | null> {
 
   <div class="-mt-px flex w-0 flex-1 justify-end">
     {
-      current > 1 ? (
+      current < total ? (
         <a
           href={
             tag
