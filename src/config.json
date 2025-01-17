@@ -1,10 +1,10 @@
 {
   "SITE": "https://coexactly.github.io/",
   "BASE": "/blog",
-  "SITE_TITLE": "Blog",
-  "SITE_NAME": "blog",
-  "SITE_DESCRIPTION": "Welcome!",
-  "SITE_FAVICON": "🙃",
+  "SITE_TITLE": "coexact thoughts",
+  "SITE_NAME": "coexact thoughts",
+  "SITE_DESCRIPTION": "blog about math, physics, and maybe other things",
+  "SITE_FAVICON": "👾",
   "NAME": "coexactly",
   "POSTS_PER_PAGE": 3,
   "MANUAL_DARK_MODE": true,
@@ -20,7 +20,7 @@
     "YOUTUBE_URL": "",
     "SUBSTACK_URL": "",
     "EMAIL": "",
-    "BLUESKY_URL": "https://bsky.app/profile/coexact.bsky.app"
+    "BLUESKY_URL": "https://bsky.app/profile/coexact.bsky.social"
   },
-  "BLUESKY_IDENTIFIER": "coexact.bsky.app"
+  "BLUESKY_IDENTIFIER": "coexact.bsky.social"
 }
