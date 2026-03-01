@@ -1,0 +1,1 @@
+- allow custom icons for favicons and header
