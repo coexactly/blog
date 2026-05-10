@@ -14,3 +14,52 @@ import { cn } from "../utils";
 >
   <slot />
 </div>
+
+<style is:global>
+  .prose details.callout {
+    border: 1px solid rgb(148 163 184 / 0.45);
+    border-radius: 0.9rem;
+    margin: 1.5rem 0;
+    padding: 0.9rem 1rem;
+    color: rgb(226 232 240);
+    background: linear-gradient(135deg, rgb(15 23 42), rgb(30 41 59));
+  }
+
+  .prose details.callout summary {
+    cursor: pointer;
+    font-weight: 700;
+    color: rgb(248 250 252);
+  }
+
+  .prose details.callout summary + * {
+    margin-top: 1rem;
+  }
+
+  .prose details.callout > :last-child {
+    margin-bottom: 0;
+  }
+
+  .prose .missing-embed {
+    display: inline-block;
+    border: 1px dashed rgb(239 68 68 / 0.65);
+    border-radius: 0.5rem;
+    padding: 0.15rem 0.45rem;
+    color: rgb(185 28 28);
+    background: rgb(254 242 242 / 0.75);
+    font-size: 0.9em;
+  }
+
+  :global(.dark) .prose details.callout {
+    border-color: rgb(71 85 105 / 0.65);
+    background: linear-gradient(135deg, rgb(15 23 42), rgb(30 41 59));
+  }
+
+  :global(.dark) .prose details.callout summary {
+    color: rgb(226 232 240);
+  }
+
+  :global(.dark) .prose .missing-embed {
+    color: rgb(252 165 165);
+    background: rgb(127 29 29 / 0.18);
+  }
+</style>

@@ -6,8 +6,8 @@ const images = import.meta.glob<{ default: ImageMetadata }>(
   "/src/assets/*.{jpeg,jpg,png,gif}"
 );
 
-// replace ../.. with src in image
-let replacedImage = image.replace("../..", "/src");
+const fallbackImage = "/src/assets/blog-placeholder-1.jpg";
+const replacedImage = image?.replace("../..", "/src") ?? fallbackImage;
 
 if (!images[replacedImage])
   throw new Error(

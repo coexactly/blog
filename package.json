@@ -8,6 +8,7 @@
     "build": "astro check && astro build && pagefind",
     "preview": "astro preview",
     "astro": "astro",
+    "format:post": "node scripts/format-post.mjs",
     "format": "prettier --write ."
   },
   "dependencies": {
