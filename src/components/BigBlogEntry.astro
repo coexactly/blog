@@ -7,13 +7,11 @@ import HeroImage from "./HeroImage.astro";
 const { title, description, pubDate, slug, heroImage, tags } = Astro.props;
 ---
 
-<article
-  class="relative isolate flex flex-col gap-8 lg:flex-row group lg:grid lg:grid-cols-2 mt-8"
->
-  <div class="relative aspect-[16/9] lg:w-full lg:shrink-0">
+<article class="relative isolate flex flex-col gap-8 md:flex-row group mt-8">
+  <div class="relative aspect-[16/9] md:w-64 md:shrink-0">
     <HeroImage image={heroImage} />
   </div>
-  <div class="h-full flex flex-col justify-center">
+  <div>
     <div class="flex items-center gap-x-4 text-xs">
       <time datetime="2020-03-16" class="text-base-500">
         <FormattedDate date={pubDate} />
@@ -22,7 +20,7 @@ const { title, description, pubDate, slug, heroImage, tags } = Astro.props;
     </div>
     <div class="max-w-xl">
       <div
-        class="mt-3 text-xl md:text-2xl font-bold leading-6 text-base-900 dark:text-base-50"
+        class="mt-3 text-lg font-semibold leading-6 text-base-900 dark:text-base-50"
       >
         <a href={BASE + `/posts/${slug}/`}>
           <span class="absolute inset-0"></span>
